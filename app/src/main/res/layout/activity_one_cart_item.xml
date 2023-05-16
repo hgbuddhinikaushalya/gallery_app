@@ -1,0 +1,79 @@
+<!-- single_item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="50dp"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/lbl_order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order ID"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_placed_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Placed Date"
+            android:textColor="#555"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <Button
+                android:id="@+id/deleteCartItem"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/teal_700"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:icon="@drawable/baseline_payment_24" />
+
+        <Button
+            android:id="@+id/btnDoPayment"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:icon="@drawable/baseline_delete_24" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#ECECEC" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
